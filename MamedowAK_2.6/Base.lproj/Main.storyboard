@@ -174,15 +174,17 @@
                             <constraint firstItem="YVe-D9-IHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="u6p-ZE-T2o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uAs-Uu-PUj"/>
                     <connections>
                         <outlet property="blueLabel" destination="2js-Sy-l5y" id="ieY-hc-fpo"/>
                         <outlet property="blueSlider" destination="rpk-ww-t5G" id="VBO-fG-OjE"/>
+                        <outlet property="blueTextField" destination="cG3-gt-vxc" id="fjQ-UT-kNC"/>
                         <outlet property="colorView" destination="YVe-D9-IHa" id="v1O-bV-g0G"/>
                         <outlet property="greenLabel" destination="zkQ-rd-IqN" id="4Df-VP-b9K"/>
                         <outlet property="greenSlider" destination="Lpl-Xd-WY7" id="qdD-gc-1gC"/>
+                        <outlet property="greenTextField" destination="6Di-iq-VfA" id="GLt-zW-dox"/>
                         <outlet property="redLabel" destination="TZI-9L-pxY" id="P9a-uM-ZGG"/>
                         <outlet property="redSlider" destination="nwh-ue-SKA" id="9qO-JZ-4kk"/>
+                        <outlet property="redTextField" destination="LQV-Ub-6Lc" id="8vP-i7-acc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -19,10 +19,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    @IBOutlet weak var redTextField: UITextField!
+    @IBOutlet weak var greenTextField: UITextField!
+    @IBOutlet weak var blueTextField: UITextField!
+    
+    var delegate: ViewControllerDelegate!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         colorView.layer.cornerRadius = 15
+        
+        redSlider.value = redValue
         
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
