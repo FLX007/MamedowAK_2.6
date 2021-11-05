@@ -51,7 +51,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func rgbSlider(_ sender: UISlider) {
-       setColor()
         
         switch sender.tag {
         case 0:
@@ -129,10 +128,12 @@ class SettingsViewController: UIViewController {
         private func addDoneButtonTo(_ textField: UITextField){
             
             let numberToolBar = UIToolbar()
-            textField.imputAccessoryView = numberToolBar
+            textField.inputAccessoryView = numberToolBar
             numberToolBar.sizeToFit()
             
-            let doneButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+            let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(didTapDone))
+            
+            let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
             
             numberToolBar.items = [flexBarButton, doneButton]
         }

@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AzS-PW-8I2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785" y="80"/>
+            <point key="canvasLocation" x="-740" y="625"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -123,7 +123,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QjU-P8-0nD">
                                         <rect key="frame" x="338" y="0.0" width="50" height="108"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-Ub-6Lc" userLabel="Blue Text Field">
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-Ub-6Lc" userLabel="Red Text Field">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -141,7 +141,7 @@
                                                     <action selector="textFieldEndEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RAY-ui-MKS"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-gt-vxc" userLabel="Red Text Field">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-gt-vxc" userLabel="Blue Text Field">
                                                 <rect key="frame" x="0.0" y="74" width="50" height="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -164,7 +164,8 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="waT-ux-shi" kind="presentation" modalPresentationStyle="fullScreen" id="Ch2-U8-o5I"/>
+                                    <action selector="doneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biF-3E-a5w"/>
+                                    <segue destination="waT-ux-shi" kind="presentation" id="2g4-ds-G8S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -203,9 +204,9 @@
         <!--Navigation Controller-->
         <scene sceneID="OOy-rv-zfG">
             <objects>
-                <navigationController id="waT-ux-shi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="waT-ux-shi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p5a-Dr-FWq">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
