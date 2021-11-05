@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     @IBOutlet weak var colorView: UIView!
     
@@ -23,22 +23,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenTextField: UITextField!
     @IBOutlet weak var blueTextField: UITextField!
     
-    var delegate: ViewControllerDelegate!
+    var delegate: SettingsViewControllerDelegate!
     
+    var redValue: Float!
+    var greenValue: Float!
+    var blueValue: Float!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         colorView.layer.cornerRadius = 15
         
         redSlider.value = redValue
+        greenSlider.value = greenValue
+        blueSlider.value = blueValue
         
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
         
-        redLabel.text = String(format: "%.2f", redSlider.value)
-        greenLabel.text = String(format: "%.2f", greenSlider.value)
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
+//        redLabel.text = String(format: "%.2f", redSlider.value)
+//        greenLabel.text = String(format: "%.2f", greenSlider.value)
+//        blueLabel.text = String(format: "%.2f", blueSlider.value)
+        
+        updateSliderLabels()
+        updateTextField()
+        updateColorView()
+        
+        addDoneButtonTo(redTextField)
+        addDoneButtonTo(greenTextField)
+        addDonButtonTo(blueTextField)
+        
         
         setColor()
         setValue(for :redLabel, greenLabel, blueLabel)
