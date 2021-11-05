@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AzS-PW-8I2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-740" y="625"/>
+            <point key="canvasLocation" x="-740" y="80"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -129,7 +129,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textFieldEndEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DY2-uc-SEK"/>
+                                                    <action selector="textFieldEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fmW-fc-6Ml"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Di-iq-VfA" userLabel="Green Text Field">
@@ -138,7 +138,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textFieldEndEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RAY-ui-MKS"/>
+                                                    <action selector="textFieldEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZvF-uo-boC"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-gt-vxc" userLabel="Blue Text Field">
@@ -147,7 +147,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textFieldEndEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="UOS-jP-Dcz"/>
+                                                    <action selector="textFieldEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zRQ-Xr-Oxr"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -165,7 +165,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="doneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biF-3E-a5w"/>
-                                    <segue destination="waT-ux-shi" kind="presentation" id="2g4-ds-G8S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -206,7 +205,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="waT-ux-shi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p5a-Dr-FWq">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

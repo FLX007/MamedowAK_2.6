@@ -31,6 +31,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         colorView.layer.cornerRadius = 15
         
         redSlider.value = redValue
@@ -70,10 +71,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneTapped(_ sender: Any) {
-        delegate.setNewColor(for:
-                                    CGFloat(redSlider.value), for:
-                                    CGFloat(greenSlider.value), and:
-                                    CGFloat(blueSlider.value))
+        delegate.setNewColor(for: CGFloat(redSlider.value), for: CGFloat(greenSlider.value), and: CGFloat(blueSlider.value))
         dismiss(animated: true)
     }
     
@@ -87,8 +85,7 @@ class SettingsViewController: UIViewController {
                 case 0: redSlider.value = currentValue
                 case 1: greenSlider.value = currentValue
                 case 2: blueSlider.value = currentValue
-                default:
-                    break
+                default: break
                 }
                 
                 updateColorView()
