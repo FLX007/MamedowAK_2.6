@@ -125,16 +125,19 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-Ub-6Lc" userLabel="Blue Text Field">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Di-iq-VfA" userLabel="Green Text Field">
                                                 <rect key="frame" x="0.0" y="59" width="50" height="34"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-gt-vxc" userLabel="Red Text Field">
                                                 <rect key="frame" x="0.0" y="118" width="50" height="34"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -145,11 +148,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nv-nn-wkO">
+                                <rect key="frame" x="167.33333333333334" y="754" width="93.333333333333343" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YVe-D9-IHa" secondAttribute="trailing" constant="20" id="5pR-b6-hYR"/>
+                            <constraint firstItem="2nv-nn-wkO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HP2-h5-AEP"/>
+                            <constraint firstItem="2nv-nn-wkO" firstAttribute="top" secondItem="Vbg-Dh-OXQ" secondAttribute="bottom" constant="317" id="JDa-01-rU4"/>
                             <constraint firstItem="YVe-D9-IHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KwW-rO-6aS"/>
                             <constraint firstItem="Vbg-Dh-OXQ" firstAttribute="leading" secondItem="YVe-D9-IHa" secondAttribute="leading" id="Nzk-2j-3s5"/>
                             <constraint firstAttribute="trailing" secondItem="Vbg-Dh-OXQ" secondAttribute="trailing" constant="20" id="XZH-hc-VBU"/>
